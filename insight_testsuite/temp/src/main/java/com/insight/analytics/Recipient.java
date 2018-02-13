@@ -1,6 +1,6 @@
 package com.insight.analytics;
 
-// Stores the repeat donars corresponding a recipient ID
+// Stores the repeat donors corresponding a recipient ID
 import java.util.HashMap;
 import java.util.Map;
 

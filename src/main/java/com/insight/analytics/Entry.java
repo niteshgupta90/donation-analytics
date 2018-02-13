@@ -1,6 +1,6 @@
 package com.insight.analytics;
 
-// It stores the fields of a record which are required to process input
+// It stores the fields of a record which are extracted from the input
 public class Entry {
 	String cmteID = "";
 	String zipCode = "";
@@ -9,6 +9,7 @@ public class Entry {
 	double percentile = 0.0;
 	double amount = 0;
 
+	//constructor to initialize variables
 	public Entry(String cmteID, String zipCode, String uid, int year, double percentile, double amount) {
 		this.cmteID = cmteID;
 		this.zipCode = zipCode;
@@ -18,6 +19,7 @@ public class Entry {
 		this.amount = amount;
 	}
 
+	//getters and setters for each variable
 	public String getCmteID() {
 		return cmteID;
 	}

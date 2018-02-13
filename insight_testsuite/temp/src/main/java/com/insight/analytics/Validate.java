@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Validate {
-	static String dateFormat = "MMDDYYYY";
+	static String dateFormat = "MMddyyyy"; //desired date format
 
 	// check validity of the each record for the desired fields
 	public static boolean checkValidity(String s, int i) {
@@ -40,12 +40,12 @@ public class Validate {
 	}
 
 	// validate the date
-	private static boolean isValidDate(String inputDate, String fromat) {
+	private static boolean isValidDate(String inputDate, String format) {
 
-		SimpleDateFormat format = new SimpleDateFormat(fromat);
-		format.setLenient(false);
+		SimpleDateFormat sdf = new SimpleDateFormat(format);
+		sdf.setLenient(false);
 		try {
-			Date date = format.parse(inputDate);
+			Date date = sdf.parse(inputDate);
 		} catch (ParseException e) {
 			return false;
 		}

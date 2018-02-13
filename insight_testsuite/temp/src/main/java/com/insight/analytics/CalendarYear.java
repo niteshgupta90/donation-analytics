@@ -1,6 +1,6 @@
 package com.insight.analytics;
 
-//Stores the different amount corresponding to a calendar year
+//Stores the different amounts corresponding to a calendar year
 import java.util.HashMap;
 import java.util.Map;
 

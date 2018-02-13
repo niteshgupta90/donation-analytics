@@ -1,5 +1,5 @@
 package com.insight.analytics;
-
+//main class to perform the analytics operation
 import java.io.IOException;
 
 public class PerfromAnalytics {

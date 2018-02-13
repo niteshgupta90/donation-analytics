@@ -50,7 +50,7 @@ function setup_testing_input_output {
   cp -r ${PROJECT_PATH}/output ${TEST_OUTPUT_PATH}
 
   rm -r ${TEST_OUTPUT_PATH}/input/*
-  #rm -r ${TEST_OUTPUT_PATH}/output/*
+  rm -r ${TEST_OUTPUT_PATH}/output/*
   cp -r ${GRADER_ROOT}/tests/${test_folder}/input/itcont.txt ${TEST_OUTPUT_PATH}/input/itcont.txt
   cp -r ${GRADER_ROOT}/tests/${test_folder}/input/percentile.txt ${TEST_OUTPUT_PATH}/input/percentile.txt
 }

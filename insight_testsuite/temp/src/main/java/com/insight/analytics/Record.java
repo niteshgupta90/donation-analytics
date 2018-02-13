@@ -5,13 +5,13 @@ import java.util.List;
 
 // It stores the fields of a record which appears in output file
 public class Record {
-	String cmteID = "";
-	String zipCode = "";
-	int year = 0;
-	long percentile = 0;
-	double sumContribution = 0;
-	long numTransaction = 0;
-	List<Double> donationAmount = null;
+	private String cmteID = "";
+	private String zipCode = "";
+	private int year = 0;
+	private long percentile = 0;
+	private double sumContribution = 0; //total contribution form repeat donors from one area
+	private long numTransaction = 0; //total number of transactions
+	private List<Double> donationAmount = null; //list to store the donation amount from each repeat donor
 
 	// constructor to initialize declared variables
 	public Record(String cmteID, String zipCode, int year, long percentile, double sumContribution,
@@ -51,7 +51,7 @@ public class Record {
 		this.year = year;
 	}
 
-	public double getPercentile() {
+	public long getPercentile() {
 		return percentile;
 	}
 
@@ -63,7 +63,7 @@ public class Record {
 		return sumContribution;
 	}
 
-	public void setSumContribution(long sumContribution) {
+	public void setSumContribution(double sumContribution) {
 		this.sumContribution = sumContribution;
 	}
 
@@ -74,5 +74,12 @@ public class Record {
 	public void setNumTransaction(long numTransaction) {
 		this.numTransaction = numTransaction;
 	}
+	
+	public List<Double> getDonationAmount() {
+		return donationAmount;
+	}
 
+	public void addDonationAmount(double amount) {
+		donationAmount.add(amount);
+	}	
 }
