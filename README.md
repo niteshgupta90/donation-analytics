@@ -1,4 +1,4 @@
-### donation-analytics
+##### donation-analytics
 ## Donation Analytics for political Campaigns.
 
 
@@ -27,7 +27,9 @@ Note: While running test suite I faced an issue. The test cases were failing as 
   cp -r ${PROJECT_PATH}/output ${TEST_OUTPUT_PATH}
 
   rm -r ${TEST_OUTPUT_PATH}/input/*
+  
   **rm -r ${TEST_OUTPUT_PATH}/output/***
+  
   cp -r ${GRADER_ROOT}/tests/${test_folder}/input/itcont.txt ${TEST_OUTPUT_PATH}/input/itcont.txt
 
 After this I was able to pass the test cases but only when the comparison was made on the basis of my previous run. So, if I run test case for a particular input, then it is getting passed in the second run for the same input. 
